@@ -1,5 +1,7 @@
+using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Rendering;
 
 namespace Assignment
 {
@@ -9,8 +11,8 @@ namespace Assignment
         {
             // LCT01_SyntaxList();
             // LCT02_SyntaxLinkedList();
-            // LCT03_SyntaxHashTable();
-             LCT04_SyntaxDictionary();
+             LCT03_SyntaxHashTable();
+            // LCT04_SyntaxDictionary();
         }
 
         #region Lecture
@@ -58,7 +60,14 @@ namespace Assignment
 
         public void LCT03_SyntaxHashTable()
         {
-            throw new System.NotImplementedException();
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("Potion", 5);
+            hashtable.Add(5, "Potion");
+
+            foreach (var item in hashtable)
+            {
+                Debug.Log(item.ToString());
+            }
         }
 
         public void LCT04_SyntaxDictionary()
