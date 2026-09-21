@@ -60,14 +60,21 @@ namespace Assignment
 
         public void LCT03_SyntaxHashTable()
         {
-            Hashtable hashtable = new Hashtable();
-            hashtable.Add("Potion", 5);
-            hashtable.Add(5, "Potion");
+            int[] numbers = {40, 70, 70, 55, 40};
 
-            foreach (var item in hashtable)
+            for (int i = 0; i < numbers.Length - 1; i++)
             {
-                Debug.Log(item.ToString());
+                for (int j = 0; j < numbers.Length-i-1; j++)
+                {
+                    if (numbers[j] > numbers[j + 1])
+                    {
+                        int temp = numbers[j];
+                        numbers[j+1] = numbers[j];
+                        temp = numbers[j + 1];
+                    }
+                }
             }
+            Debug.Log(numbers[numbers.Length - 2]);
         }
 
         public void LCT04_SyntaxDictionary()

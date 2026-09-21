@@ -385,43 +385,28 @@ MonoBehaviour:
   as01Words:
   - apple
   as02Numbers: 01000000020000000300000002000000010000000300000001000000
-  as03Input: '")"'
+  as03Input: '"("'
   as04List:
     values: 
   as05List:
     values: []
   as06FirstDictionary:
-    entries:
-    - key: a
-      value: 1
-    - key: b
-      value: 2
+    entries: []
   as06SecondDictionary:
-    entries:
-    - key: c
-      value: 3
-    - key: d
-      value: 4
+    entries: []
   as07List:
-    values: 0100000002000000010000000300000002000000
+    values: 
   as08Numbers: 
   as09Inventory:
     entries: []
-  as09ItemName: potion
-  as09Quantity: 2
+  as09ItemName: 
+  as09Quantity: 0
   as10EventQueue:
-    values:
-    - eventType: 
-      name: 
-      priority: 0
+    values: []
   as11PlayerStats:
-    entries:
-    - key: kills
-      value: 10
-    - key: deaths
-      value: 2
-  as11StatName: assists
-  as11Value: 5
+    entries: []
+  as11StatName: 
+  as11Value: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
